@@ -30,7 +30,6 @@ class Autoload
         defined('DS') || define('DS', DIRECTORY_SEPARATOR);
         require_once __DIR__.DS.'..'.DS.'const.php';
         require_once __DIR__.DS.'..'.DS.'router'.DS.'RouterDriver.php';
-        require_once __DIR__.DS.'..'.DS.'func.php';
     }
 }
 

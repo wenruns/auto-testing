@@ -9,3 +9,7 @@ defined('ROOT_PATH') || define('ROOT_PATH', substr(__DIR__, 0, strrpos(__DIR__, 
 
 defined('ROUTER_PATH') || define('ROUTER_PATH', ROOT_PATH.DS.'routes');
 
+defined('CORE_PATH') || define('CORE_PATH', __DIR__);
+
+defined('SRC_PATH') || define('SRC_PATH', ROOT_PATH . DS . 'src');
+

@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ufinterface>
+    <voucher id="GL0000000001668">
+        <voucher_head>
+            <company>D002</company>
+            <voucher_type>确认收入计提推单礼的分录</voucher_type>
+            <fiscal_year>2019</fiscal_year>
+            <accounting_period>10</accounting_period>
+            <voucher_id/>
+            <attachment_number>1</attachment_number>
+            <date>2019-11-05</date>
+            <enter>068</enter>
+            <cashier/>
+            <signature/>
+            <checker/>
+            <posting_date/>
+            <posting_person/>
+            <voucher_making_system/>
+            <memo1/>
+            <memo2/>
+            <reserve1/>
+            <reserve2>GL0000000001668</reserve2>
+            <revokeflag/>
+            <company>D002</company>
+            <voucher_type>确认收入计提推单费的分录</voucher_type>
+            <fiscal_year>2019</fiscal_year>
+            <accounting_period>10</accounting_period>
+            <voucher_id/>
+            <attachment_number>1</attachment_number>
+            <date>2019-11-05</date>
+            <enter>068</enter>
+            <cashier/>
+            <signature/>
+            <checker/>
+            <posting_date/>
+            <posting_person/>
+            <voucher_making_system/>
+            <memo1/>
+            <memo2/>
+            <reserve1/>
+            <reserve2>GL0000000001668</reserve2>
+            <revokeflag/>
+        </voucher_head>
+        <voucher_body>
+            <entry>
+                <entry_id>1</entry_id>
+                <account_code>5601011402</account_code>
+                <abstract>销售费用-中介推单费-推单礼</abstract>
+                <settlement/>
+                <document_id/>
+                <document_date>2019-09-30</document_date>
+                <currency/>
+                <unit_price/>
+                <exchange_rate1/>
+                <exchange_rate2>0</exchange_rate2>
+                <debit_quantity>0</debit_quantity>
+                <primary_debit_amount>0</primary_debit_amount>
+                <secondary_debit_amount/>
+                <natural_debit_currency>5000</natural_debit_currency>
+                <credit_quantity>0</credit_quantity>
+                <primary_credit_amount>0</primary_credit_amount>
+                <secondary_credit_amount/>
+                <natural_credit_currency>0</natural_credit_currency>
+                <bill_type/>
+                <bill_id/>
+                <bill_date/>
+                <auxiliary_accounting>
+                    <item name="dept_id"/>
+                    <item name="personnel_id"/>
+                    <item name="ccus_id"/>
+                    <item name="csup_id"/>
+                    <item name="item_id"/>
+                    <item name="item_class"/>
+                    <item name="operator">-</item>
+                    <item name="self_define1"/>
+                    <item name="self_define2"/>
+                    <item name="self_define3"/>
+                    <item name="self_define4"/>
+                    <item name="self_define5"/>
+                    <item name="self_define6"/>
+                    <item name="self_define7"/>
+                    <item name="self_define8"/>
+                    <item name="self_define9"/>
+                    <item name="self_define10"/>
+                    <item name="self_define11"/>
+                    <item name="self_define12"/>
+                    <item name="self_define13"/>
+                    <item name="self_define14"/>
+                    <item name="self_define15"/>
+                    <item name="self_define16"/>
+                </auxiliary_accounting>
+                <detail>
+                    <cash_flow_statement>
+                        <cash_flow cash_item="" natural_debit_currency="0.00" natural_credit_currency=""/>
+                    </cash_flow_statement>
+                    <code_remark_statement>
+                        <code_remark i_id="">
+                            <item name=""/>
+                        </code_remark>
+                    </code_remark_statement>
+                </detail>
+            </entry>
+            <entry>
+                <entry_id>1</entry_id>
+                <account_code>22410602</account_code>
+                <abstract>其他应付款-中介推单费-推单礼</abstract>
+                <settlement/>
+                <document_id/>
+                <document_date>2019-09-30</document_date>
+                <currency/>
+                <unit_price/>
+                <exchange_rate1/>
+                <exchange_rate2>0</exchange_rate2>
+                <debit_quantity>0</debit_quantity>
+                <primary_debit_amount>0</primary_debit_amount>
+                <secondary_debit_amount/>
+                <natural_debit_currency>5000</natural_debit_currency>
+                <credit_quantity>0</credit_quantity>
+                <primary_credit_amount>0</primary_credit_amount>
+                <secondary_credit_amount/>
+                <natural_credit_currency>0</natural_credit_currency>
+                <bill_type/>
+                <bill_id/>
+                <bill_date/>
+                <auxiliary_accounting>
+                    <item name="dept_id"/>
+                    <item name="personnel_id"/>
+                    <item name="ccus_id"/>
+                    <item name="csup_id"/>
+                    <item name="item_id"/>
+                    <item name="item_class"/>
+                    <item name="operator">-</item>
+                    <item name="self_define1"/>
+                    <item name="self_define2"/>
+                    <item name="self_define3"/>
+                    <item name="self_define4"/>
+                    <item name="self_define5"/>
+                    <item name="self_define6"/>
+                    <item name="self_define7"/>
+                    <item name="self_define8"/>
+                    <item name="self_define9"/>
+                    <item name="self_define10"/>
+                    <item name="self_define11"/>
+                    <item name="self_define12"/>
+                    <item name="self_define13"/>
+                    <item name="self_define14"/>
+                    <item name="self_define15"/>
+                    <item name="self_define16"/>
+                </auxiliary_accounting>
+                <detail>
+                    <cash_flow_statement>
+                        <cash_flow cash_item="" natural_debit_currency="" natural_credit_currency="0.00"/>
+                    </cash_flow_statement>
+                    <code_remark_statement>
+                        <code_remark i_id="">
+                            <item name=""/>
+                        </code_remark>
+                    </code_remark_statement>
+                </detail>
+            </entry>
+            <entry>
+                <entry_id>1</entry_id>
+                <account_code>5601011401</account_code>
+                <abstract>销售费用-中介推单费-推单费</abstract>
+                <settlement/>
+                <document_id/>
+                <document_date>2019-09-30</document_date>
+                <currency/>
+                <unit_price/>
+                <exchange_rate1/>
+                <exchange_rate2>0</exchange_rate2>
+                <debit_quantity>0</debit_quantity>
+                <primary_debit_amount>0</primary_debit_amount>
+                <secondary_debit_amount/>
+                <natural_debit_currency>5000</natural_debit_currency>
+                <credit_quantity>0</credit_quantity>
+                <primary_credit_amount>0</primary_credit_amount>
+                <secondary_credit_amount/>
+                <natural_credit_currency>0</natural_credit_currency>
+                <bill_type/>
+                <bill_id/>
+                <bill_date/>
+                <auxiliary_accounting>
+                    <item name="dept_id"/>
+                    <item name="personnel_id"/>
+                    <item name="ccus_id"/>
+                    <item name="csup_id"/>
+                    <item name="item_id"/>
+                    <item name="item_class"/>
+                    <item name="operator">-</item>
+                    <item name="self_define1"/>
+                    <item name="self_define2"/>
+                    <item name="self_define3"/>
+                    <item name="self_define4"/>
+                    <item name="self_define5"/>
+                    <item name="self_define6"/>
+                    <item name="self_define7"/>
+                    <item name="self_define8"/>
+                    <item name="self_define9"/>
+                    <item name="self_define10"/>
+                    <item name="self_define11"/>
+                    <item name="self_define12"/>
+                    <item name="self_define13"/>
+                    <item name="self_define14"/>
+                    <item name="self_define15"/>
+                    <item name="self_define16"/>
+                </auxiliary_accounting>
+                <detail>
+                    <cash_flow_statement>
+                        <cash_flow cash_item="" natural_debit_currency="0.00" natural_credit_currency=""/>
+                    </cash_flow_statement>
+                    <code_remark_statement>
+                        <code_remark i_id="">
+                            <item name=""/>
+                        </code_remark>
+                    </code_remark_statement>
+                </detail>
+            </entry>
+            <entry>
+                <entry_id>1</entry_id>
+                <account_code>22410601</account_code>
+                <abstract>销售费用-中介推单费-推单费</abstract>
+                <settlement/>
+                <document_id/>
+                <document_date>2019-09-30</document_date>
+                <currency/>
+                <unit_price/>
+                <exchange_rate1/>
+                <exchange_rate2>0</exchange_rate2>
+                <debit_quantity>0</debit_quantity>
+                <primary_debit_amount>0</primary_debit_amount>
+                <secondary_debit_amount/>
+                <natural_debit_currency>5000</natural_debit_currency>
+                <credit_quantity>0</credit_quantity>
+                <primary_credit_amount>0</primary_credit_amount>
+                <secondary_credit_amount/>
+                <natural_credit_currency>0</natural_credit_currency>
+                <bill_type/>
+                <bill_id/>
+                <bill_date/>
+                <auxiliary_accounting>
+                    <item name="dept_id"/>
+                    <item name="personnel_id"/>
+                    <item name="ccus_id"/>
+                    <item name="csup_id"/>
+                    <item name="item_id"/>
+                    <item name="item_class"/>
+                    <item name="operator">-</item>
+                    <item name="self_define1"/>
+                    <item name="self_define2"/>
+                    <item name="self_define3"/>
+                    <item name="self_define4"/>
+                    <item name="self_define5"/>
+                    <item name="self_define6"/>
+                    <item name="self_define7"/>
+                    <item name="self_define8"/>
+                    <item name="self_define9"/>
+                    <item name="self_define10"/>
+                    <item name="self_define11"/>
+                    <item name="self_define12"/>
+                    <item name="self_define13"/>
+                    <item name="self_define14"/>
+                    <item name="self_define15"/>
+                    <item name="self_define16"/>
+                </auxiliary_accounting>
+                <detail>
+                    <cash_flow_statement>
+                        <cash_flow cash_item="" natural_debit_currency="" natural_credit_currency="0.00"/>
+                    </cash_flow_statement>
+                    <code_remark_statement>
+                        <code_remark i_id="">
+                            <item name=""/>
+                        </code_remark>
+                    </code_remark_statement>
+                </detail>
+            </entry>
+        </voucher_body>
+    </voucher>
+    <voucher id="GL0000000001668">
+        <voucher_head>
+            <company>D002</company>
+            <voucher_type>实付推单费的分录</voucher_type>
+            <fiscal_year>2019</fiscal_year>
+            <accounting_period>10</accounting_period>
+            <voucher_id/>
+            <attachment_number>1</attachment_number>
+            <date>2019-11-05</date>
+            <enter>068</enter>
+            <cashier/>
+            <signature/>
+            <checker/>
+            <posting_date/>
+            <posting_person/>
+            <voucher_making_system/>
+            <memo1/>
+            <memo2/>
+            <reserve1/>
+            <reserve2>GL0000000001668</reserve2>
+            <revokeflag/>
+            <company>D002</company>
+            <voucher_type>实付推单礼的分录</voucher_type>
+            <fiscal_year>2019</fiscal_year>
+            <accounting_period>10</accounting_period>
+            <voucher_id/>
+            <attachment_number>1</attachment_number>
+            <date>2019-11-05</date>
+            <enter>068</enter>
+            <cashier/>
+            <signature/>
+            <checker/>
+            <posting_date/>
+            <posting_person/>
+            <voucher_making_system/>
+            <memo1/>
+            <memo2/>
+            <reserve1/>
+            <reserve2>GL0000000001668</reserve2>
+            <revokeflag/>
+        </voucher_head>
+        <voucher_body>
+            <entry>
+                <entry_id>1</entry_id>
+                <account_code>5601011402</account_code>
+                <abstract>其他应付款-中介推单费-推单礼</abstract>
+                <settlement/>
+                <document_id/>
+                <document_date>2019-09-30</document_date>
+                <currency/>
+                <unit_price/>
+                <exchange_rate1/>
+                <exchange_rate2>0</exchange_rate2>
+                <debit_quantity>0</debit_quantity>
+                <primary_debit_amount>0</primary_debit_amount>
+                <secondary_debit_amount/>
+                <natural_debit_currency>5000</natural_debit_currency>
+                <credit_quantity>0</credit_quantity>
+                <primary_credit_amount>0</primary_credit_amount>
+                <secondary_credit_amount/>
+                <natural_credit_currency>0</natural_credit_currency>
+                <bill_type/>
+                <bill_id/>
+                <bill_date/>
+                <auxiliary_accounting>
+                    <item name="dept_id"/>
+                    <item name="personnel_id"/>
+                    <item name="ccus_id"/>
+                    <item name="csup_id"/>
+                    <item name="item_id"/>
+                    <item name="item_class"/>
+                    <item name="operator">-</item>
+                    <item name="self_define1"/>
+                    <item name="self_define2"/>
+                    <item name="self_define3"/>
+                    <item name="self_define4"/>
+                    <item name="self_define5"/>
+                    <item name="self_define6"/>
+                    <item name="self_define7"/>
+                    <item name="self_define8"/>
+                    <item name="self_define9"/>
+                    <item name="self_define10"/>
+                    <item name="self_define11"/>
+                    <item name="self_define12"/>
+                    <item name="self_define13"/>
+                    <item name="self_define14"/>
+                    <item name="self_define15"/>
+                    <item name="self_define16"/>
+                </auxiliary_accounting>
+                <detail>
+                    <cash_flow_statement>
+                        <cash_flow cash_item="" natural_debit_currency="0.00" natural_credit_currency=""/>
+                    </cash_flow_statement>
+                    <code_remark_statement>
+                        <code_remark i_id="">
+                            <item name=""/>
+                        </code_remark>
+                    </code_remark_statement>
+                </detail>
+            </entry>
+            <entry>
+                <entry_id>1</entry_id>
+                <account_code>22410602</account_code>
+                <abstract>银行存款</abstract>
+                <settlement/>
+                <document_id/>
+                <document_date>2019-09-30</document_date>
+                <currency/>
+                <unit_price/>
+                <exchange_rate1/>
+                <exchange_rate2>0</exchange_rate2>
+                <debit_quantity>0</debit_quantity>
+                <primary_debit_amount>0</primary_debit_amount>
+                <secondary_debit_amount/>
+                <natural_debit_currency>5000</natural_debit_currency>
+                <credit_quantity>0</credit_quantity>
+                <primary_credit_amount>0</primary_credit_amount>
+                <secondary_credit_amount/>
+                <natural_credit_currency>0</natural_credit_currency>
+                <bill_type/>
+                <bill_id/>
+                <bill_date/>
+                <auxiliary_accounting>
+                    <item name="dept_id"/>
+                    <item name="personnel_id"/>
+                    <item name="ccus_id"/>
+                    <item name="csup_id"/>
+                    <item name="item_id"/>
+                    <item name="item_class"/>
+                    <item name="operator">-</item>
+                    <item name="self_define1"/>
+                    <item name="self_define2"/>
+                    <item name="self_define3"/>
+                    <item name="self_define4"/>
+                    <item name="self_define5"/>
+                    <item name="self_define6"/>
+                    <item name="self_define7"/>
+                    <item name="self_define8"/>
+                    <item name="self_define9"/>
+                    <item name="self_define10"/>
+                    <item name="self_define11"/>
+                    <item name="self_define12"/>
+                    <item name="self_define13"/>
+                    <item name="self_define14"/>
+                    <item name="self_define15"/>
+                    <item name="self_define16"/>
+                </auxiliary_accounting>
+                <detail>
+                    <cash_flow_statement>
+                        <cash_flow cash_item="" natural_debit_currency="" natural_credit_currency="0.00"/>
+                    </cash_flow_statement>
+                    <code_remark_statement>
+                        <code_remark i_id="">
+                            <item name=""/>
+                        </code_remark>
+                    </code_remark_statement>
+                </detail>
+            </entry>
+            <entry>
+                <entry_id>1</entry_id>
+                <account_code>5601011401</account_code>
+                <abstract>其他应付款-中介推单费-推单费</abstract>
+                <settlement/>
+                <document_id/>
+                <document_date>2019-09-30</document_date>
+                <currency/>
+                <unit_price/>
+                <exchange_rate1/>
+                <exchange_rate2>0</exchange_rate2>
+                <debit_quantity>0</debit_quantity>
+                <primary_debit_amount>0</primary_debit_amount>
+                <secondary_debit_amount/>
+                <natural_debit_currency>5000</natural_debit_currency>
+                <credit_quantity>0</credit_quantity>
+                <primary_credit_amount>0</primary_credit_amount>
+                <secondary_credit_amount/>
+                <natural_credit_currency>0</natural_credit_currency>
+                <bill_type/>
+                <bill_id/>
+                <bill_date/>
+                <auxiliary_accounting>
+                    <item name="dept_id"/>
+                    <item name="personnel_id"/>
+                    <item name="ccus_id"/>
+                    <item name="csup_id"/>
+                    <item name="item_id"/>
+                    <item name="item_class"/>
+                    <item name="operator">-</item>
+                    <item name="self_define1"/>
+                    <item name="self_define2"/>
+                    <item name="self_define3"/>
+                    <item name="self_define4"/>
+                    <item name="self_define5"/>
+                    <item name="self_define6"/>
+                    <item name="self_define7"/>
+                    <item name="self_define8"/>
+                    <item name="self_define9"/>
+                    <item name="self_define10"/>
+                    <item name="self_define11"/>
+                    <item name="self_define12"/>
+                    <item name="self_define13"/>
+                    <item name="self_define14"/>
+                    <item name="self_define15"/>
+                    <item name="self_define16"/>
+                </auxiliary_accounting>
+                <detail>
+                    <cash_flow_statement>
+                        <cash_flow cash_item="" natural_debit_currency="0.00" natural_credit_currency=""/>
+                    </cash_flow_statement>
+                    <code_remark_statement>
+                        <code_remark i_id="">
+                            <item name=""/>
+                        </code_remark>
+                    </code_remark_statement>
+                </detail>
+            </entry>
+            <entry>
+                <entry_id>1</entry_id>
+                <account_code>22410601</account_code>
+                <abstract>银行存款</abstract>
+                <settlement/>
+                <document_id/>
+                <document_date>2019-09-30</document_date>
+                <currency/>
+                <unit_price/>
+                <exchange_rate1/>
+                <exchange_rate2>0</exchange_rate2>
+                <debit_quantity>0</debit_quantity>
+                <primary_debit_amount>0</primary_debit_amount>
+                <secondary_debit_amount/>
+                <natural_debit_currency>5000</natural_debit_currency>
+                <credit_quantity>0</credit_quantity>
+                <primary_credit_amount>0</primary_credit_amount>
+                <secondary_credit_amount/>
+                <natural_credit_currency>0</natural_credit_currency>
+                <bill_type/>
+                <bill_id/>
+                <bill_date/>
+                <auxiliary_accounting>
+                    <item name="dept_id"/>
+                    <item name="personnel_id"/>
+                    <item name="ccus_id"/>
+                    <item name="csup_id"/>
+                    <item name="item_id"/>
+                    <item name="item_class"/>
+                    <item name="operator">-</item>
+                    <item name="self_define1"/>
+                    <item name="self_define2"/>
+                    <item name="self_define3"/>
+                    <item name="self_define4"/>
+                    <item name="self_define5"/>
+                    <item name="self_define6"/>
+                    <item name="self_define7"/>
+                    <item name="self_define8"/>
+                    <item name="self_define9"/>
+                    <item name="self_define10"/>
+                    <item name="self_define11"/>
+                    <item name="self_define12"/>
+                    <item name="self_define13"/>
+                    <item name="self_define14"/>
+                    <item name="self_define15"/>
+                    <item name="self_define16"/>
+                </auxiliary_accounting>
+                <detail>
+                    <cash_flow_statement>
+                        <cash_flow cash_item="" natural_debit_currency="" natural_credit_currency="0.00"/>
+                    </cash_flow_statement>
+                    <code_remark_statement>
+                        <code_remark i_id="">
+                            <item name=""/>
+                        </code_remark>
+                    </code_remark_statement>
+                </detail>
+            </entry>
+        </voucher_body>
+    </voucher>
+</ufinterface>

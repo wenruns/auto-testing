@@ -27,6 +27,9 @@ class FilesController
     public function file($index = '')
     {
         if ($index) {
+            if (!isset($_FILES[$index])) {
+                throw new \Exception('undefined index '.$index);
+            }
             $this->file = $_FILES[$index];
         } else {
             $this->file = $_FILES;

@@ -9,14 +9,22 @@
  * 生成一个缓存文件（命名空间缓存、映射缓存、）
  */
 
-namespace core\router;
-
+use \core\router\Router;
 
 class RouterDriver
 {
-    public function post($uri, $closure)
+    protected $pools = [];
+
+    public function name($name)
     {
 
+    }
+
+    public function post($uri, $closure)
+    {
+        if ($uri) {
+
+        }
     }
 
     public function get()
@@ -54,26 +62,5 @@ class RouterDriver
     {
 
     }
-
-    protected function loading($dir_path, $router)
-    {
-        foreach (scandir($dir_path) as $file) {
-            if ($file != '.' && $file != '..') {
-                if (is_dir($dir_path.DS.$file)) {
-                    includeRouters($dir_path.DS.$file);
-                } else if (is_file($dir_path.DS.$file)) {
-                    include_once $dir_path.DS.$file;
-                }
-            }
-        }
-    }
-
-    public function run($router)
-    {
-        include_once __DIR__.DS.'Router.php';
-        $this->loading(ROUTER_PATH, $router);
-    }
-
 }
-$_wen_router_driver = new RouterDriver();
-$_wen_router_driver->run($_wen_router_driver);
+include_once __DIR__ . DS . 'Router.php';

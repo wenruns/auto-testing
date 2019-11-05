@@ -5,4 +5,6 @@
  * Date: 2019/10/30
  * Time: 17:15
  */
-var_dump($router);
+Router::get('a/b', function ($outer) {
+
+});

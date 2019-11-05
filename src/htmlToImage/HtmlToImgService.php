@@ -31,13 +31,18 @@ class HtmlToImgService
         $objectName = request('objectName');
         // 上传到aliOss的bucket对象
         $bucket = request('bucket');
+        file_put_contents(storage_path('text.txt'), 'url:'.$url."\r\nname:".$objectName . "\r\nbucket:" . $bucket);
         try {
             if (function_exists('wkhtmltox_convert')) {
                 $res = wkhtmltox_convert(
                     'image',
                     array(
                         'out' => $file_path,
-                        'in' => $url
+                        'in' => $url,
+                        'screenWidth'=>790,
+                        'smartWidth'=>true,
+                        'quality'=>100,
+//                        'fmt'=>'jpg'
                     )
                 );
                 if (!$res) {
