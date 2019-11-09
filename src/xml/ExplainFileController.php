@@ -14,21 +14,13 @@ class ExplainFileController extends BaseController
 
     protected $key = '123456';
 
-    protected $acceptFilePath = __DIR__;
-
-    protected $acceptFileName = 'accept.txt';
-
-    protected $xmlFilePath = '';
-
-    protected $xmlFileName = '';
-
+    protected $xmlDirPath = ROOT_PATH . DS . 'storage' . DS;
+//    protected $xmlDirPath = 'D:/';
 
     public function __construct()
     {
         parent::__construct();
         $this->key = config('config.key', '123456');
-        $this->xmlFilePath = config('config.xml_save_path', storage_path());
-        $this->xmlFileName = config('config.xml_save_name', 'xmlFile.xml');
     }
 
     public function accept()
@@ -54,23 +46,35 @@ class ExplainFileController extends BaseController
 
     protected function saveXml($content)
     {
+        $fileName = $this->file('xmlFile')->getName();
+        $fileName = base64_decode(rtrim($fileName, '.txt'));
+        $dirName = $this->xmlDirPath . substr($fileName, 0, strrpos($fileName, '/'));
+        if (!is_dir($dirName)) {
+            mkdir($dirName, 777, true);
+            chmod($dirName, 0777);
+        }
         // 解密
         $xmlContent = $this->decrypt($content, $this->key, $this->request('iv'));
-        if (!is_dir($this->xmlFilePath)) {
-            mkdir($this->xmlFilePath, 777, true);
-            chmod($this->xmlFilePath, 0777);
-        }
-        // 保存目标文件
-        file_put_contents($this->xmlFilePath.DS.$this->xmlFileName, $xmlContent);
 
-        $logPath = $this->xmlFilePath.DS.date('Ymd').DS.date('His');
+        // 保存目标文件
+        file_put_contents($this->xmlDirPath . $fileName, $xmlContent);
+
+        $logName = substr($fileName, strrpos($fileName, '/')+1);
+        $first= strpos($fileName, '/');
+        $logPath = $this->xmlDirPath . substr($fileName, 0, $first).DS.'Backup'.substr($fileName, $first, strrpos($fileName, '/')-$first+1);
+        if (strpos($fileName, 'Month') === false) {
+            $logPath .= date('Y/m/d/');
+        } else {
+            $logPath .= date('Y/m/');
+        }
         if (!is_dir($logPath)) {
             mkdir($logPath, 0777, true);
             chmod($logPath, 0777);
         }
+//        dd($logName, $logPath, $fileName);
         // 保存日志文件
-        file_put_contents($logPath.DS.$this->file('xmlFile')->getName(), $content);
-        file_put_contents($logPath.DS.$this->xmlFileName, $xmlContent);
+//        file_put_contents($logPath.str_replace('.xml', '', $logName).'.txt', $content);
+        file_put_contents($logPath.$logName, $xmlContent);
     }
 
 }

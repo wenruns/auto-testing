@@ -2,18 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38d6d741-6636-484d-a262-d2095c5cdcc9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/routes/a/api.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/xml/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/router/RouterMethod.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/wen/error/303.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/autoload/Autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/autoload/Autoload.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/const.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/const.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/router/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/router/Router.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/router/RouterDriver.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/router/RouterDriver.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/wen/FilesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/wen/FilesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/a/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/a/api.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/htmlToImage/HtmlToImgService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/htmlToImage/HtmlToImgService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/xml/ExplainFileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/xml/ExplainFileController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/xml/20191105/112639/xml.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/xml/20191105/112639/xmlFile.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/xml/xmlFile.xml" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,31 +27,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/accept.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="13" />
-              <folding>
-                <element signature="e#6#85#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/router/RouterDriver.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-55">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="1550">
+              <caret line="68" column="46" lean-forward="true" selection-start-line="68" selection-start-column="46" selection-end-line="68" selection-end-column="46" />
               <folding>
                 <element signature="e#6#117#0#PHP" expanded="true" />
               </folding>
@@ -60,13 +39,71 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/xml/ExplainFileController.php">
+        <entry file="file://$PROJECT_DIR$/storage/pingzheng/Month/901_day.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
+            <state relative-caret-position="-1125">
+              <caret line="150" column="20" lean-forward="true" selection-start-line="150" selection-start-column="20" selection-end-line="150" selection-end-column="20" />
               <folding>
-                <element signature="e#6#85#0#PHP" expanded="true" />
+                <element signature="n#voucher#0;n#ufinterface#0;n#!!top" />
+                <element signature="n#entry#1;n#voucher_body#0;n#voucher#1;n#ufinterface#0;n#!!top" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/storage/pingzheng/Month/D001_day.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="25">
+              <caret line="57" column="30" selection-start-line="57" selection-start-column="30" selection-end-line="57" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/storage/pingzheng/Month/D016_day.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="164" column="29" selection-start-line="164" selection-start-column="26" selection-end-line="164" selection-end-column="29" />
+              <folding>
+                <element signature="n#voucher#0;n#ufinterface#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core/router/RouterMethod.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="58" column="41" selection-start-line="58" selection-start-column="41" selection-end-line="58" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/func.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2775">
+              <caret line="116" column="1" selection-start-line="116" selection-start-column="1" selection-end-line="116" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/wen/RequestTrait.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/html2img.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -75,7 +112,7 @@
         <entry file="file://$PROJECT_DIR$/routes/api.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="175">
-              <caret line="7" column="11" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="11" />
+              <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -83,48 +120,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/router/Router.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="83" column="21" lean-forward="true" selection-start-line="83" selection-start-column="21" selection-end-line="83" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/a/api.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/storage/xml/xmlFile.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-300">
-              <caret line="30" column="30" lean-forward="true" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/routes/web.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/xml/BaseController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-125">
-              <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
-              <folding>
-                <element signature="e#6#85#0#PHP" expanded="true" />
-                <element signature="e#107#130#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="417">
+              <caret line="90" column="47" lean-forward="true" selection-start-line="90" selection-start-column="47" selection-end-line="90" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -145,13 +142,18 @@
       <find>mkdri</find>
       <find>mkdir</find>
       <find>$objectName</find>
-      <find>static</find>
       <find>unlink</find>
       <find>FilesController</find>
+      <find>static</find>
+      <find>self::getRouter()</find>
+      <find />
+      <find>public  function</find>
     </findStrings>
     <replaceStrings>
-      <replace />
       <replace>isTrue</replace>
+      <replace />
+      <replace>$this</replace>
+      <replace>public function</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -160,14 +162,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/FileTrait.php" />
-        <option value="$PROJECT_DIR$/src/RequestTrait.php" />
-        <option value="$PROJECT_DIR$/vender/router/RouterController.php" />
-        <option value="$PROJECT_DIR$/vender/autoload/Autoload.php" />
-        <option value="$PROJECT_DIR$/src/BaseController.php" />
-        <option value="$PROJECT_DIR$/vender/const.php" />
-        <option value="$PROJECT_DIR$/vender/func.php" />
-        <option value="$PROJECT_DIR$/src/ExplainFileController.php" />
         <option value="$PROJECT_DIR$/src/MiddleWareTrait.php" />
         <option value="$PROJECT_DIR$/core/router/RouterController.php" />
         <option value="$PROJECT_DIR$/src/Xml/BaseController.php" />
@@ -182,7 +176,6 @@
         <option value="$PROJECT_DIR$/src/xml/BaseController.php" />
         <option value="$PROJECT_DIR$/src/Controller.php" />
         <option value="$PROJECT_DIR$/src/xml/MiddleWareTrait.php" />
-        <option value="$PROJECT_DIR$/core/wen/FileTrait.php" />
         <option value="$PROJECT_DIR$/src/htmlToImage/AliOssService.php" />
         <option value="$PROJECT_DIR$/err.log" />
         <option value="$PROJECT_DIR$/src/htmlToImage/PhantomjsTools.php" />
@@ -190,27 +183,36 @@
         <option value="$PROJECT_DIR$/html2img.php" />
         <option value="$PROJECT_DIR$/src/htmlToImage/js/index.js" />
         <option value="$PROJECT_DIR$/accept.php" />
-        <option value="$PROJECT_DIR$/src/xml/ExplainFileController.php" />
         <option value="$PROJECT_DIR$/vendor/composer/ClassLoader.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/public/accept.php" />
         <option value="$PROJECT_DIR$/public/html2img.php" />
         <option value="$PROJECT_DIR$/core/router/RouterFacade.php" />
-        <option value="$PROJECT_DIR$/core/func.php" />
         <option value="$PROJECT_DIR$/router/api.php" />
         <option value="$PROJECT_DIR$/core/autoload/Autoload.php" />
-        <option value="$PROJECT_DIR$/core/const.php" />
-        <option value="$PROJECT_DIR$/core/router/RouterDriver.php" />
         <option value="$PROJECT_DIR$/src/xml/readme.md" />
-        <option value="$PROJECT_DIR$/routes/api.php" />
         <option value="$PROJECT_DIR$/src/htmlToImage/HtmlToImgService.php" />
         <option value="$PROJECT_DIR$/core/wen/FilesController.php" />
         <option value="$PROJECT_DIR$/storage/xml/20191105/112639/xmlFile.xml" />
-        <option value="$PROJECT_DIR$/core/router/Router.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/public/index.php" />
-        <option value="$PROJECT_DIR$/routes/a/api.php" />
         <option value="$PROJECT_DIR$/storage/xml/xmlFile.xml" />
+        <option value="$PROJECT_DIR$/core/wen/FileTrait.php" />
+        <option value="$PROJECT_DIR$/storage/pingzheng/Backup/Day/2019/11/09_068_day.xml" />
+        <option value="$PROJECT_DIR$/storage/pingzheng/Day/068_day.xml" />
+        <option value="$PROJECT_DIR$/core/wen/exceptions/303.php" />
+        <option value="$PROJECT_DIR$/core/wen/exceptions/303.html" />
+        <option value="$PROJECT_DIR$/core/const.php" />
+        <option value="$PROJECT_DIR$/routes/a/api.php" />
+        <option value="$PROJECT_DIR$/src/xml/ExplainFileController.php" />
+        <option value="$PROJECT_DIR$/routes/api.php" />
+        <option value="$PROJECT_DIR$/core/router/Router.php" />
+        <option value="$PROJECT_DIR$/core/router/RouterMethod.php" />
+        <option value="$PROJECT_DIR$/core/func.php" />
+        <option value="$PROJECT_DIR$/core/router/RouterDriver.php" />
+        <option value="$PROJECT_DIR$/storage/pingzheng/Month/901_day.xml" />
+        <option value="$PROJECT_DIR$/storage/pingzheng/Month/D001_day.xml" />
+        <option value="$PROJECT_DIR$/storage/pingzheng/Month/D016_day.xml" />
       </list>
     </option>
   </component>
@@ -242,13 +244,12 @@
             <path>
               <item name="testHtml" type="b2602c69:ProjectViewProjectNode" />
               <item name="testHtml" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="configs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="testHtml" type="b2602c69:ProjectViewProjectNode" />
               <item name="testHtml" type="462c0819:PsiDirectoryNode" />
               <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="autoload" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="testHtml" type="b2602c69:ProjectViewProjectNode" />
@@ -259,18 +260,13 @@
             <path>
               <item name="testHtml" type="b2602c69:ProjectViewProjectNode" />
               <item name="testHtml" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="wen" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="testHtml" type="b2602c69:ProjectViewProjectNode" />
               <item name="testHtml" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="testHtml" type="b2602c69:ProjectViewProjectNode" />
-              <item name="testHtml" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
-              <item name="a" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="testHtml" type="b2602c69:ProjectViewProjectNode" />
@@ -292,22 +288,14 @@
               <item name="testHtml" type="b2602c69:ProjectViewProjectNode" />
               <item name="testHtml" type="462c0819:PsiDirectoryNode" />
               <item name="storage" type="462c0819:PsiDirectoryNode" />
-              <item name="xml" type="462c0819:PsiDirectoryNode" />
+              <item name="pingzheng" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="testHtml" type="b2602c69:ProjectViewProjectNode" />
               <item name="testHtml" type="462c0819:PsiDirectoryNode" />
               <item name="storage" type="462c0819:PsiDirectoryNode" />
-              <item name="xml" type="462c0819:PsiDirectoryNode" />
-              <item name="20191105" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="testHtml" type="b2602c69:ProjectViewProjectNode" />
-              <item name="testHtml" type="462c0819:PsiDirectoryNode" />
-              <item name="storage" type="462c0819:PsiDirectoryNode" />
-              <item name="xml" type="462c0819:PsiDirectoryNode" />
-              <item name="20191105" type="462c0819:PsiDirectoryNode" />
-              <item name="112639" type="462c0819:PsiDirectoryNode" />
+              <item name="pingzheng" type="462c0819:PsiDirectoryNode" />
+              <item name="Month" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -323,15 +311,15 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\wens\wens\testHtml" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\wens\wens\testHtml\public" />
       <recent name="E:\wens\wens\testHtml\src\xml" />
       <recent name="E:\wens\wens\testHtml\core\wen" />
       <recent name="E:\wens\wens\testHtml\src\Xml" />
       <recent name="E:\wens\wens\testHtml\vender\router" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\wens\wens\testHtml" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -364,21 +352,26 @@
       <workItem from="1572830126143" duration="15756000" />
       <workItem from="1572863677673" duration="738000" />
       <workItem from="1572923740993" duration="4112000" />
+      <workItem from="1572949004952" duration="372000" />
+      <workItem from="1573003588240" duration="3376000" />
+      <workItem from="1573104805796" duration="687000" />
+      <workItem from="1573122357785" duration="9000" />
+      <workItem from="1573264941168" duration="21252000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102896000" />
+    <option name="totallyTimeSpent" value="128592000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27132195" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2867804" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32900432" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946696" weight="0.32827735" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -387,8 +380,8 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.2012987" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.7713976" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053304" side_tool="true" visible="true" weight="0.32827735" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -401,36 +394,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/storage/xml/20191031/112904/xml.txt" />
-    <entry file="file://$PROJECT_DIR$/storage/xml/20191031/112904/xmlFile.xml" />
-    <entry file="file://$PROJECT_DIR$/src/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/configs/zxw.php" />
-    <entry file="file://$PROJECT_DIR$/err.txt" />
-    <entry file="file://$PROJECT_DIR$/storage/screen_shot/screen_shot_20191031065726.png" />
-    <entry file="file://$PROJECT_DIR$/err.log" />
-    <entry file="file://$PROJECT_DIR$/storage/screen_shot/screen_shot_20191031070343.png" />
-    <entry file="file://$PROJECT_DIR$/storage/screen_shot/screen_shot_20191031070459.png" />
-    <entry file="file://$PROJECT_DIR$/test.php" />
-    <entry file="file://$PROJECT_DIR$/src/htmlToImage/PhantomjsTools.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1525">
-          <caret line="65" column="32" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/htmlToImage/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="775">
-          <caret line="31" column="61" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_5.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="507">
@@ -445,24 +408,10 @@
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/configs/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="40" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/composer/ClassLoader.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-275">
           <caret line="156" column="61" selection-start-line="156" selection-start-column="56" selection-end-line="156" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/autoload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="67" selection-start-line="6" selection-start-column="67" selection-end-line="6" selection-end-column="67" />
         </state>
       </provider>
     </entry>
@@ -474,27 +423,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.htaccess" />
-    <entry file="file://$PROJECT_DIR$/public/html2img.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/wen/RequestTrait.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/xml/MiddleWareTrait.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="24" column="32" lean-forward="true" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/xml/readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -543,43 +471,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/autoload/Autoload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="31" column="59" selection-start-line="31" selection-start-column="59" selection-end-line="31" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/const.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/func.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-685">
-          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/xml/20191105/112054/xmlFile.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2055" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/xml/20191105/112054/xml.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-250" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/xml/20191105/111355/xmlFile.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/xml/20191105/111443/xmlFile.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/xml/20191105/112054/xmlFile.xml" />
+    <entry file="file://$PROJECT_DIR$/storage/xml/20191105/112054/xml.txt" />
+    <entry file="file://$PROJECT_DIR$/storage/xml/20191105/111355/xmlFile.xml" />
+    <entry file="file://$PROJECT_DIR$/storage/xml/20191105/111443/xmlFile.xml" />
     <entry file="file://$PROJECT_DIR$/storage/xml/20191105/112639/xmlFile.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2475">
@@ -592,53 +487,6 @@
         <state relative-caret-position="-450" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/wen/FilesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/wen/FileTrait.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="17" column="46" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
-          <folding>
-            <element signature="e#6#85#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/xml/ExplainFileController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
-          <folding>
-            <element signature="e#6#85#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/accept.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="13" />
-          <folding>
-            <element signature="e#6#85#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/router/RouterDriver.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-55">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="e#6#117#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
@@ -646,37 +494,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/router/Router.php">
+    <entry file="file://$PROJECT_DIR$/public/accept.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="83" column="21" lean-forward="true" selection-start-line="83" selection-start-column="21" selection-end-line="83" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="11" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/a/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/xml/xmlFile.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-300">
-          <caret line="30" column="30" lean-forward="true" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
+        <state relative-caret-position="100">
+          <caret line="9" selection-start-line="9" selection-end-line="13" />
+          <folding>
+            <element signature="e#6#85#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/xml/BaseController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-125">
+        <state relative-caret-position="250">
           <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
           <folding>
             <element signature="e#6#85#0#PHP" expanded="true" />
@@ -685,10 +515,214 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/storage/xml/xmlFile.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/pingzheng/Backup/Day/2019/11/09_108_day.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-25" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/wen/FileTrait.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="e#6#85#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/pingzheng/Day/108_day.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1200" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/pingzheng/Backup/Day/2019/11/09_108_day.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1184">
+          <caret line="17" column="27" lean-forward="true" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/pingzheng/Backup/Day/2019/11/09_068_day.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/pingzheng/Backup/Day/2019/11/09_068_day.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/pingzheng/Day/068_day.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/autoload/Autoload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="31" column="65" selection-start-line="31" selection-start-column="53" selection-end-line="31" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/const.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="15" column="43" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/autoload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="67" selection-start-line="6" selection-start-column="67" selection-end-line="6" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/a/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xml/MiddleWareTrait.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/wen/FilesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/wen/error/303.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/pcre/pcre.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1547">
+          <caret line="82" column="19" selection-start-line="82" selection-start-column="9" selection-end-line="82" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configs/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="8" column="20" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xml/ExplainFileController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#6#85#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/router/Router.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="90" column="47" lean-forward="true" selection-start-line="90" selection-start-column="47" selection-end-line="90" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/func.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2775">
+          <caret line="116" column="1" selection-start-line="116" selection-start-column="1" selection-end-line="116" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/pingzheng/Month/901_day.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1125">
+          <caret line="150" column="20" lean-forward="true" selection-start-line="150" selection-start-column="20" selection-end-line="150" selection-end-column="20" />
+          <folding>
+            <element signature="n#voucher#0;n#ufinterface#0;n#!!top" />
+            <element signature="n#entry#1;n#voucher_body#0;n#voucher#1;n#ufinterface#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/pingzheng/Month/D001_day.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="57" column="30" selection-start-line="57" selection-start-column="30" selection-end-line="57" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/pingzheng/Month/D016_day.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="164" column="29" selection-start-line="164" selection-start-column="26" selection-end-line="164" selection-end-column="29" />
+          <folding>
+            <element signature="n#voucher#0;n#ufinterface#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/router/RouterDriver.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1550">
+          <caret line="68" column="46" lean-forward="true" selection-start-line="68" selection-start-column="46" selection-end-line="68" selection-end-column="46" />
+          <folding>
+            <element signature="e#6#117#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/html2img.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/wen/RequestTrait.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/router/RouterMethod.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="58" column="41" selection-start-line="58" selection-start-column="41" selection-end-line="58" selection-end-column="41" />
         </state>
       </provider>
     </entry>
