@@ -6,4 +6,4 @@
  * Time: 11:38
  */
 
-Router::get('', '');
+Router::get('/', 'Controller@show');

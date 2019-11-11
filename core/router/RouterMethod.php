@@ -7,8 +7,6 @@
  */
 class RouterMethod{
 
-
-
     public function post($uri, $closure)
     {
         return Router::post($uri, $closure);
@@ -56,4 +54,3 @@ class RouterMethod{
     }
 }
 
-require_once CORE_PATH . DS . 'func.php';

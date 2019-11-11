@@ -10,4 +10,8 @@ namespace src;
 class Controller
 {
 
+    public function index()
+    {
+        echo 'ss';
+    }
 }

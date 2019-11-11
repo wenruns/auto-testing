@@ -6,6 +6,9 @@
  * Time: 14:45
  */
 return [
+    'APP_DEBUG' => env('APP_DEBUG', false),
+
+
     'key' => '123456',
     'xml_save_path' => storage_path('xml'),
     'xml_save_name' => 'xmlFile.xml',

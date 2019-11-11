@@ -1,4 +1,3 @@
-
 <?php
 /**
  * Created by PhpStorm.
@@ -12,10 +11,57 @@ if (!function_exists('dd')) {
     function dd()
     {
         $args = func_get_args();
-        foreach ($args as $var) {
-            var_dump($var);
+        if (empty($args)) {
+            throw new \Exception('function dd need one argument at least.');
         }
+        Output::show($args);
         exit(0);
+    }
+}
+
+if (!function_exists('dump')) {
+    function dump()
+    {
+        $args = func_get_args();
+        if (empty($args)) {
+            throw new \Exception('function dump need one argument at least.');
+        }
+        Output::show($args);
+    }
+}
+
+if (!function_exists('env')) {
+    function env($index, $default = '')
+    {
+        static $env = [];
+        if (empty($env)) {
+            $str = file(ROOT_PATH . DS . '.env');
+            foreach ($str as $key => $item) {
+                if (strpos($item, '#') !== 0) {
+                    $a = explode('=', $item);
+                    $env[trim($a[0])] = trim($a[1]);
+                }
+            }
+        }
+        if (!isset($env[$index])) {
+            return $default;
+        }
+        $value = $env[$index];
+        switch (strtolower($value)) {
+            case 'true':
+            case '(true)':
+                return true;
+            case 'false':
+            case '(false)':
+                return false;
+            case 'empty':
+            case '(empty)':
+                return '';
+            case 'null':
+            case '(null)':
+                return '';
+        }
+        return $value;
     }
 }
 
@@ -24,7 +70,15 @@ if (!function_exists('storage_path')) {
     // 返回存储路径
     function storage_path($path = '')
     {
-        return rtrim(ROOT_PATH.DS.'storage'.DS.$path, DS);
+        return ROOT_PATH . DS . 'storage' . DS . $path;
+//        return rtrim(ROOT_PATH . DS . 'storage' . DS . $path, DS);
+    }
+}
+
+if (!function_exists('public_path')) {
+    function public_path($path = '')
+    {
+        return ROOT_PATH . DS . 'public' . $path;
     }
 }
 
@@ -34,11 +88,11 @@ if (!function_exists('config')) {
     function config($index = '', $default = null)
     {
         $index = explode('.', $index);
-        $config_path = ROOT_PATH.DS.'configs';
-        $config_file = $index[0].'.php';
-        if (is_file($config_path.DS.$config_file)) {
+        $config_path = ROOT_PATH . DS . 'configs';
+        $config_file = $index[0] . '.php';
+        if (is_file($config_path . DS . $config_file)) {
             unset($index[0]);
-            $configs = require($config_path.DS.$config_file);
+            $configs = require($config_path . DS . $config_file);
             foreach ($index as $key) {
                 if (!isset($configs[$key])) {
                     return $default;
@@ -115,4 +169,6 @@ if (!function_exists('get_client_IP')) {
         return $realIp;
     }
 }
+
+
 
