@@ -6,6 +6,8 @@
  * Time: 9:27
  */
 
+namespace core\wen\output;
+
 class Output
 {
     static function show($var)
@@ -59,16 +61,16 @@ class Output
             foreach ($var as $key => $vo) {
                 if (is_array($vo)) {
                     if (!empty($vo)) {
-                        echo $pref . $key . ' => array(' . count($var) . '){<br/>';
+                        echo $pref . $key . ' => array(' . count($var) . ') {<br/>';
                         self::showDetail($vo, ++$flag);
                         $flag--;
                         echo $pref . '}<br/>';
                     } else {
-                        echo $pref . $key . ' => array(' . count($var) . '){}<br/>';
+                        echo $pref . $key . ' => array(' . count($var) . ') {}<br/>';
                     }
                 } else {
                     echo $pref . $key . ' => ';
-                    var_dump($vo);
+                    echo gettype($vo) . '(' . strlen($vo) . ') ' . $vo;
                     echo '<br/>';
                 }
             }
@@ -78,7 +80,7 @@ class Output
             if (is_string($var)) {
                 echo ($flag ? $pref : '') . 'string(' . strlen($var) . ')"' . $var . '"';
             } else {
-                var_dump($var);
+                echo gettype($var) . '(' . strlen($var) . ') ' . $var;
             }
             echo '</div>';
         }

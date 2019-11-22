@@ -9,6 +9,10 @@
  * 生成一个缓存文件（命名空间缓存、映射缓存、）
  */
 
+namespace core\router;
+
+use core\kernel\Response;
+
 class RouterDriver
 {
     protected $pools = [];
@@ -19,32 +23,160 @@ class RouterDriver
 
     protected $match_uri = '';
 
-    public function routeParsing($uri, $closure, $method, $prefix)
+    protected $current_uri = '';
+
+    /**
+     * 编译路由
+     * @param $uri
+     * @param $closure
+     * @param $method
+     * @param $prefix
+     * @param $groupName
+     * @return $this
+     */
+    public function routeParsing($uri, $closure, $method, $prefix, $groupName)
     {
         // todo:: 路由缓存池
+        $this->setCurrentUri($uri);
+        $this->cacheRoutes(base64_encode($uri), [
+            'method' => $method,
+            'closure' => $closure,
+            'prefix' => $prefix,
+            'group' => $groupName,
+        ]);
+        $this->matchRoute();
+        return $this;
+    }
+
+    /**
+     * 设置别名
+     * @param $name
+     */
+    public function name($name)
+    {
+        $this->aliasPools[$name] = $this->match_uri['uri'];
+    }
+
+
+    /**
+     * 启动路由
+     */
+    public function run()
+    {
+        $this->checkRouteMatchResult();
+        $this->action();
+    }
+
+    /**
+     * 检测路由控制器和方法
+     */
+    protected function action()
+    {
+        $params = [];
+        foreach ($this->match_uri['result_request_uri'] as $key => $item) {
+            if ($key > 0) {
+                $params[] = $item[0];
+            }
+        }
+        $uri = $this->match_uri['uri'];
+        $info = $this->pools[base64_encode($uri)];
+        $closure = $info['closure'];
+        $group = $info['group'];
+        if (is_callable($closure)) {
+            Response::setClosure($closure, $params);
+            return ;
+        }
+        $namespace = isset($group['namespace']) ? $group['namespace'] : '';
+        if (strpos($closure, '@') === false) {
+            $className = '\src' . $namespace . '\\' . $closure;
+            preg_match('/(\/edit\/|\/edit$|\/create\/|\/create$|\/delete\/|\/delete$)/', $uri, $output);
+            if (empty($output) || !isset($output[1])) {
+                $output[1] = 'index';
+            }
+            switch (trim($output['1'], '/')) {
+                case 'edit':
+                    $method = 'edit';
+                    break;
+                case 'create':
+                    $method = 'create';
+                    break;
+                case 'delete':
+                    $method = 'delete';
+                    break;
+                default:
+                    $method = 'index';
+            }
+            Response::setClosure(array(new $className(), $method), $params);
+            return ;
+        }
+        $classes = explode('@', $closure);
+        $className = '\src' . $namespace . '\\' . $classes[0];
+        $method = $classes[1];
+        Response::setClosure(array(new $className(), $method), $params);
+    }
+
+
+    /**
+     * @throws \Exception
+     * 判断路由是否匹配成功
+     */
+    protected function checkRouteMatchResult()
+    {
+        if (empty($this->match_uri)) {
+            dd('未找到路由');
+        }
+    }
+
+
+    /**
+     * 缓存路由
+     * @param $index
+     * @param $value
+     */
+    protected function cacheRoutes($index, $value)
+    {
+        $this->pools[$index] = $value;
+    }
+
+    /**
+     * 设置当前编译的路由uri，用于编译
+     * @param $uri
+     */
+    protected function setCurrentUri($uri)
+    {
         if (empty($uri)) {
             $uri = '/';
         }
         if (Router::$prefix != 'web') {
             $uri = trim(Router::$prefix . '/' . $uri, '/');
         }
-        $this->pools[base64_encode($uri)] = [
-            'method' => $method,
-            'closure' => $closure,
-            'prefix' => $prefix,
-        ];
-//        if (empty($this->match_uri)) {
+        $this->current_uri = $uri;
+    }
+
+    /**
+     * 正则匹配路由
+     */
+    protected function matchRoute()
+    {
+        if (!$this->checkMethod()) {
+            return ;
+        }
+        $uri = $this->current_uri;
         // 匹配参数
         $request = $_SERVER['REQUEST_URI'];
         $script_uri = $_SERVER['SCRIPT_NAME'];
         $self_uri = $_SERVER['PHP_SELF'];
+
         preg_match_all('/\{([^\/]+)\}/', $uri, $result_uri);
         // todo:: 路由匹配规则
         $reg = '/^' . str_replace('/', '\/', $uri) . '$/';
+
         foreach ($result_uri[0] as $key => $vo) {
             $reg = str_replace($vo, '([^\/]+)', $reg);
         }
-        $request_uri = ltrim($request, ($script_uri ? $script_uri : $self_uri)); // 请求uri
+        // 请求uri
+        $request_uri = str_replace(str_replace('index.php', '', ($script_uri ? $script_uri : $self_uri)), '', str_replace('index.php', '', $request));
+        empty($request_uri) ? $request_uri = '/' : '';
         // todo:: 匹配路由
         preg_match_all($reg, $request_uri, $result_request_uri);
         if (count($result_request_uri[0]) == 1 && (empty($this->match_uri) || count($result_request_uri) < count($this->match_uri['result_request_uri']))) {
@@ -55,71 +187,25 @@ class RouterDriver
                 'result_request_uri' => $result_request_uri
             ];
         }
-//        }
     }
 
-    public function name($name)
+    /**
+     * 检测路由请求方式是否正确
+     * @return bool
+     */
+    protected function checkMethod()
     {
-        $this->aliasPools[$name] = $this->uri;
-    }
-
-    public function run()
-    {
-        if (empty($this->match_uri)) {
-            dd('未找到路由');
+        $method = $this->pools[base64_encode($this->current_uri)]['method'];
+        if ($method == 'ANY') {
+            return true;
         }
-        $uri = $this->match_uri['uri'];
-        $info = $this->pools[base64_encode($uri)];
-        $closure = $info['closure'];
-        if (is_callable($closure)) {
-            $return_var = call_user_func($info['closure']);
-        } else {
-            require_once SRC_PATH . DS . $closure . '.php';
-            if (strpos($closure, '@') === false) {
-                $className = '\src\\' . $closure;
-                preg_match('/(\/edit\/|\/edit$|\/create\/|\/create$|\/delete\/|\/delete$)/', $uri, $output);
-                if (empty($output) || !isset($output[1])) {
-                    $output[1] = 'index';
-                }
-                switch (trim($output['1'], '/')) {
-                    case 'edit':
-                        $method = 'edit';
-                        break;
-                    case 'create':
-                        $method = 'create';
-                        break;
-                    case 'delete':
-                        $method = 'delete';
-                        break;
-                    default:
-                        $method = 'index';
-                }
-            } else {
-                $classes = explode('@', $closure);
-                $className = '\src\\'.$classes[0];
-                $method = $classes[1];
-            }
-            if (class_exists($className)) {
-                $instance = new $className();
-                $return_var = $instance->$method();
-            } else {
-                throw new \Exception('是是是');
-            }
+        $requestMethod = $_SERVER['REQUEST_METHOD'];
+        if (request('_method')) {
+            $requestMethod = request('_method');
         }
-        $this->makeResponse($return_var);
-    }
-
-    protected function makeResponse($return_var)
-    {
-//        dd($this->pools, base64_encode($this->match_uri['uri']));
-        if ($this->pools[base64_encode($this->match_uri['uri'])]['prefix'] == '/api') {
-            apiResponse($return_var);
-        } else {
-            echo $return_var;
+        if (strtoupper($method) != strtoupper($requestMethod)) {
+            return false;
         }
+        return true;
     }
-
-
 }
-
-include_once __DIR__ . DS . 'Router.php';

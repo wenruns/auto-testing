@@ -5,6 +5,7 @@
  * Date: 2019/10/30
  * Time: 17:17
  */
+use core\wen\output\Output;
 
 if (!function_exists('dd')) {
     // 打印输出
