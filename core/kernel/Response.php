@@ -30,24 +30,29 @@ class Response
     public static function send()
     {
         if (is_callable(self::$closure)) {
-            return call_user_func(self::$closure, ...self::$params);
+            self::$body = call_user_func(self::$closure, ...self::$params);
         }
-
-        return self::makeResponse();
+        echo self::doc();
     }
 
-    protected static function makeResponse()
+    protected static function doc()
     {
-        return self::head().self::body();
-    }
-
-    protected static function head()
-    {
-
-    }
-
-    protected static function body()
-    {
-
+        $title = 'test';
+        $body = self::$body;
+        return  <<<EOT
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>$title</title>
+</head>
+<body>
+$body
+</body>
+</html>
+EOT;
     }
 }

@@ -70,7 +70,7 @@ class Output
                     }
                 } else {
                     echo $pref . $key . ' => ';
-                    echo gettype($vo) . '(' . strlen($vo) . ') ' . $vo;
+                    echo gettype($vo) . '(' . (is_string($vo) ? strlen($vo) : 1) . ') ' . $vo;
                     echo '<br/>';
                 }
             }
@@ -80,7 +80,7 @@ class Output
             if (is_string($var)) {
                 echo ($flag ? $pref : '') . 'string(' . strlen($var) . ')"' . $var . '"';
             } else {
-                echo gettype($var) . '(' . strlen($var) . ') ' . $var;
+                echo gettype($var) . '(' . 1 . ') ' . $var;
             }
             echo '</div>';
         }
